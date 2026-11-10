@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edexcel Maths Revision Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1 id="title">EDEXCEL A-LEVEL MATHS 9MA0 // REVISION COMMAND CENTRE</h1>
+  <div class="tools">
+    <div class="seg" id="courseSwitch" role="tablist" aria-label="Course"></div>
+    <button id="btnExport" title="Download your ratings as a file">Export</button>
+    <button id="btnImport" title="Load ratings from an exported file">Import</button>
+    <button id="btnReset" class="danger" title="Clear all ratings for this course">Reset</button>
+    <input type="file" id="fileImport" accept="application/json" hidden>
+  </div>
+</header>
+<div class="subbar" id="subtitle"></div>
+<nav class="tabs" id="tabs" aria-label="Sheets"></nav>
+<main id="view"></main>
+<div class="toast" id="toast" role="status"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
